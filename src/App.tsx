@@ -5,6 +5,7 @@ import { Hero } from './components/Hero';
 import { SecondHero } from './components/SecondHero';
 import { RegisterForm } from './components/RegisterForm';
 import ICard from './@types/ICard';
+import { Footer } from './components/Footer';
 
 function App() {
 	const arr: ICard[] = [
@@ -149,6 +150,7 @@ function App() {
 			<Gallery cards={cards} />
 			<SecondHero />
 			<RegisterForm add={addCard} />
+			<Footer></Footer>
 		</div>
 	);
 }
