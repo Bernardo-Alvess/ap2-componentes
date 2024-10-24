@@ -7,7 +7,7 @@ interface Props {
 
 const Card = (data: Props) => {
 	return (
-		<div className="min-w-64 border border-gray-300 flex-row min-h-44 rounded-lg justify-center items-center shadow-xl">
+		<div className="max-w-64 w-full border border-gray-300 flex-row min-h-44 rounded-lg justify-center items-center shadow-lg">
 			<div className="py-6 px-4">
 				<div className="flex items-center gap-4 p-2 h-full w-full">
 					<img
