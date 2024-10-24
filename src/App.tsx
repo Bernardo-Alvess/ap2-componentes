@@ -10,13 +10,6 @@ import { Footer } from './components/Footer';
 function App() {
 	const arr: ICard[] = [
 		{
-			name: 'Lorenzo Cardoso',
-			number: '(71) 99432-1098',
-			isPaid: false,
-			isStudent: true,
-			url: 'https://avatars.githubusercontent.com/u/102180476?v=4',
-		},
-		{
 			name: 'Code Bullet',
 			number: '(81) 99321-0987',
 			isPaid: true,
@@ -52,11 +45,14 @@ function App() {
 			url: 'https://avatars.githubusercontent.com/u/8683378?v=4',
 		},
 	];
-	
-	const [cards, setCards] = useState<ICard[]>(arr);
 
+	const [cards, setCards] = useState<ICard[]>(
+		arr.sort((a, b) => a.name.localeCompare(b.name))
+	);
 	const addCard = (newCard: ICard) => {
-		setCards((prevCards) => [...prevCards, newCard]);
+		setCards((prevCards) =>
+			[...prevCards, newCard].sort((a, b) => a.name.localeCompare(b.name))
+		);
 	};
 
 	return (

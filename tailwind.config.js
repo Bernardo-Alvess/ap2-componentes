@@ -8,7 +8,12 @@ export default {
     fontFamily: {
       "inter": ["Inter", "sans-serif"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        'sucess': '#52FF00',
+        'pending': '#EBFF00'
+      }
+    },
   },
   plugins: [],
 }

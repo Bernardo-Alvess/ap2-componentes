@@ -25,10 +25,10 @@ const Card = (data: Props) => {
 						<div
 							className="rounded-lg p-1"
 							style={{
-								backgroundColor: 'rgba(74, 222, 128, 0.1)',
+								backgroundColor: 'rgba(82, 255, 0, 0.1)',
 							}}
 						>
-							<p className="text-green-500">Confirmado</p>
+							<p className="text-sucess">Confirmado</p>
 						</div>
 					) : (
 						<div
@@ -37,7 +37,7 @@ const Card = (data: Props) => {
 								backgroundColor: 'rgba(235, 255, 0, 0.1)',
 							}}
 						>
-							<p className="text-yellow-500">Pendente</p>
+							<p className="text-pending">Pendente</p>
 						</div>
 					)}
 				</div>
